@@ -1,0 +1,47 @@
+﻿{
+  "Settings":  {
+    //File Service Settings
+    "FileSystemServiceSettings": {
+      "ImageDirectory": "C:\\Users\\Łukasz\\Desktop\\temp folder"
+    },
+    //Image Service Settings
+    "ImageServiceSettings": {
+      "ConversionSettings": {
+        //settings for orginal image conversion
+        "ImageConverterSettings": {
+          "Format": "jpeg",
+          "Prefix": "orginal_",
+          "Quality": "70"
+        },
+        // settings for thumbnails
+        "ThumbnailConverterSettings": {
+          "ThumbnailFormat": "jpeg",
+          "IgnoreAspectRatio": false,
+          "Thumbnails": [
+            {
+              "Width": "200",
+              "Height": "100",
+              "Prefix": "mini_",
+              "Quality": "70",
+              "Format": "jpeg" 
+            },
+            {
+              "Width": "300",
+              "Height": "150",
+              "Prefix": "mid_",
+              "Quality": "70",
+              "Format": "jpeg"
+            },
+            {
+              "Width": "500",
+              "Height": "200",
+              "Prefix": "max_",
+              "Quality": "70",
+              "Format": "jpeg"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
